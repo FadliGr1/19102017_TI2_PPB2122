@@ -9,3 +9,4 @@ dependencyResolutionManagement {
 rootProject.name = "LifeCycle"
 include ':app'
 include ':praktikum5'
+include ':praktikum6'
