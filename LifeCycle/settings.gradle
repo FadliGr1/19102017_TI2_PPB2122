@@ -10,3 +10,6 @@ rootProject.name = "LifeCycle"
 include ':app'
 include ':praktikum5'
 include ':praktikum6'
+include ':praktikum7'
+include ':praktikum8'
+include ':praktikum10'
