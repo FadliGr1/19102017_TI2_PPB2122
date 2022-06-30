@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LifeCycle">
         <activity
+            android:name=".PhoneAuthActivity"
+            android:exported="true" />
+        <activity
+            android:name=".QuoteAddUpdateActivity"
+            android:exported="true" />
+        <activity
+            android:name=".DashboardQuoteActivity"
+            android:exported="true" />
+        <activity
             android:name=".SignUpActivity"
             android:exported="true" />
         <activity

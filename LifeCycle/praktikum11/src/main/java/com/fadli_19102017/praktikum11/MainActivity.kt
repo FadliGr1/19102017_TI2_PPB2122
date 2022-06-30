@@ -15,6 +15,7 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
     private lateinit var auth: FirebaseAuth
@@ -40,6 +41,12 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             .requestEmail()
             .build()
         googleSignInClient = GoogleSignIn.getClient(this, gso)
+
+        btnOpenQuote.setOnClickListener{
+            val intent = Intent(this@MainActivity, DashboardQuoteActivity::class.java)
+            startActivity(intent)
+        }
+
 
     }
     public override fun onStart() {
